@@ -1,0 +1,41 @@
+image: node:6.10.1
+
+cache:
+  paths:
+  - node_modules/
+
+before_script:
+  - npm install
+
+builder:
+  stage: build
+  script:
+    - npm build
+  only:
+    - master
+
+linter:
+  stage: test
+  script:
+   - npm run lint
+
+unit_tester:
+  stage: test
+  script:
+   - npm test
+  artifacts:
+    paths:
+      - coverage/lcov-report/
+
+pages:
+  stage: deploy
+  dependencies:
+    - unit_tester
+  script:
+    - mv coverage/lcov-report/ public/
+  artifacts:
+    paths:
+      - public
+    expire_in: 30 days
+  only:
+    - master

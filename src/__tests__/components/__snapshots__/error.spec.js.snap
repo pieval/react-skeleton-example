@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Error /> Rendering should render with default props / SNAPSHOT TEST 1`] = `
+<div
+  className="errorBox"
+>
+  Test error message
+  <button
+    className="closeButton"
+    onClick={[Function]}
+  >
+    X
+  </button>
+</div>
+`;

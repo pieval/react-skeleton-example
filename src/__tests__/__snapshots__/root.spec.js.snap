@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Root /> Rendering should render with default props / SNAPSHOT TEST 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "name": "TEST STORE",
+      "subscribe": [Function],
+    }
+  }
+>
+  <div>
+    <Router
+      history={
+        Object {
+          "name": "TEST HISTORY",
+        }
+      }
+      render={[Function]}
+    />
+  </div>
+</Provider>
+`;
