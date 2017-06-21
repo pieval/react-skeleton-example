@@ -1,7 +1,7 @@
 {
-  "name": "Erudit-frontend",
+  "name": "react-skeleton-example",
   "version": "0.1.0",
-  "description": "Erudit e-learning courses frontend",
+  "description": "React app skeleton",
   "main": "index.js",
   "scripts": {
     "dev": "node server.js",
@@ -18,7 +18,7 @@
   ],
   "author": "pieval",
   "license": "MIT",
-  "repository": "https://gitlab.com/erudit-solution/erudit-frontend",
+  "repository": "https://github.com/pieval/react-skeleton-example",
   "devDependencies": {
     "autoprefixer": "^6.7.7",
     "babel-core": "^6.24.0",
